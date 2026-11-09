@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F1EFE9;
+  color: #17262B;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.dark body {
+  background-color: #121B1E;
+  color: #EDEAE2;
+}
+
+::selection {
+  background-color: #C68A3E;
+  color: #17262B;
+}
+
+/* Visible keyboard focus */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #C68A3E;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* One orchestrated entrance for the hero only */
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-rise {
+  animation: rise-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hero-rise-delay-1 {
+  animation-delay: 0.1s;
+}
+.hero-rise-delay-2 {
+  animation-delay: 0.22s;
+}
+.hero-rise-delay-3 {
+  animation-delay: 0.34s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .hero-rise,
+  .hero-rise-delay-1,
+  .hero-rise-delay-2,
+  .hero-rise-delay-3 {
+    animation: none;
+  }
+  * {
+    transition-duration: 0.01ms !important;
+  }
+}
