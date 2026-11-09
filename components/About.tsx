@@ -7,7 +7,7 @@ export default function About() {
         </h2>
         <div className="max-w-prose space-y-5 text-base leading-relaxed text-ink/80 dark:text-night-text/80">
           <p>
-            I'm currently in my fifth semester of a B.Sc. at North South
+            I'm currently in my fifth semester of a BBA. at North South
             University, and for the past four months I've also been running my
             own small business in Dhaka — which means I'm the person
             customers talk to when something's unclear, wrong, or just needs
