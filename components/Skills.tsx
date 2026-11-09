@@ -21,7 +21,7 @@ const skillGroups = [
 
 const education = [
   {
-    title: "B.Sc., North South University",
+    title: "BBA, North South University",
     detail: "In progress — currently in 5th semester",
   },
   {
